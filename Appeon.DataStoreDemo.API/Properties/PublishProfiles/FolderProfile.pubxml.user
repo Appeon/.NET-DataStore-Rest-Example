@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AdventureWorks2012">
+      <Value>Data Source=172.25.100.10,1433%3bInitial Catalog=AdventureWorks2012%3bIntegrated Security=False%3bUser ID=sa%3bPassword=appeon%3bPooling=True%3bMin Pool Size=0%3bMax Pool Size=100%3bMultipleActiveResultSets=False%3bEncrypt=False%3bTrustServerCertificate=False%3bApplicationIntent=ReadWrite</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

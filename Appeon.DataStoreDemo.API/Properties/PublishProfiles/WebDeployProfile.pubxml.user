@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>eyJIZWFkZXIiOnsiU2lnbmF0dXJlIjoiODAyM0NDRTQxMzY4NkFCMTc3N0IzODQyNzZGN0QwNjYiLCJUaW1lc3RhbXAiOjE2MTk0MDY0NDN9LCJCb2R5IjoiOWZ4TWNVam1ZbldIUVNrYmw3dk5jUT09In0=</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AdventureWorks2012">
+      <Value>Data Source=172.25.6.210,1433%3bInitial Catalog=AdventureWorks2012%3bIntegrated Security=False%3bUser ID=sa%3bPassword=Appeon123!@#%3bPooling=True%3bMin Pool Size=0%3bMax Pool Size=100%3bMultipleActiveResultSets=False%3bEncrypt=False%3bTrustServerCertificate=False%3bApplicationIntent=ReadWrite</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
