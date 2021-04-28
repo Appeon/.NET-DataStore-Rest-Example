@@ -41,25 +41,24 @@ namespace Appeon.DataStoreDemo.API.Controllers
         }
 
         //POST api/SalesOrder/{pageIndex}/{pageSize}
-        [HttpGet("{pageIndex}")]
+        [HttpGet("{pageIndex}/{pageSize}")]
         [ProducesResponseType(typeof(Page<SalesOrder>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<Page<SalesOrder>>> GetByPageAsync(
             int pageIndex, 
-            int? pageSize, 
+            int pageSize, 
             int? customerId, 
             DateTime? startOrderDate, 
             DateTime? endOrderDate)
         {
             try
-            {
-                int pagesize = pageSize ?? 10;
+            {               
                 customerId = customerId ?? 0;
                 startOrderDate = startOrderDate ?? new DateTime(2011, 1, 1).Date;
                 endOrderDate = endOrderDate ?? new DateTime(2011, 1, 1).Date;
                 object[] objects = new object[] { customerId, startOrderDate, endOrderDate };
-                var result = await _isalesorderservice.LoadByPageAsync(pageIndex, pagesize, objects, default);
-
+                var result = await _isalesorderservice.LoadByPageAsync(pageIndex, pageSize, objects, default);
+                
                 return Ok(result);
             }
             catch (Exception ex)

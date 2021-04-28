@@ -133,5 +133,7 @@ namespace Appeon.DataStoreDemo.Service.Models
         [DwColumn("ModifiedDate", TypeName = "datetime")]
         public DateTime ModifiedDate { get; set; }
 
+        [NotMapped]
+        public IList<SalesOrderDetail> OrderDetails { get; set; }
     }
 }
