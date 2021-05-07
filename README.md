@@ -18,7 +18,7 @@ The project is structured as follows.
 ```
 ##### Running the Project
 
-1. Dowload the project and save it to your local directory. 
+1. Download the project and save it to your local directory. 
 
 2. Open the *DataStore-Example.sln* solution in Visual Studio 2019 or another C# development IDE.
 
