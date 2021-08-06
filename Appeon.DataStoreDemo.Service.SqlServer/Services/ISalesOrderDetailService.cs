@@ -22,5 +22,9 @@ namespace Appeon.DataStoreDemo.Services
         Task<int> UpdateAsync(
             SalesOrderDetail salesOrderDetail,
             CancellationToken cancellationToken = default);
+            
+        Task<int> DeleteAsync(
+            SalesOrderDetail salesOrderDetailId,
+            CancellationToken cancellationToken = default);
     }
 }

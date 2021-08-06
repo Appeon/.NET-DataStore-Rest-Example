@@ -37,7 +37,7 @@ namespace Appeon.DataStoreDemo.Services
             var salesOrderDetailDatastore = new DataStore<SalesOrderDetail>(_context);
 
             await salesOrderDetailDatastore.RetrieveByKeyAsync(
-                new object[] { salesOrderdetail.SalesOrderID },
+                new object[] { salesOrderdetail.SalesOrderDetailID },
                 cancellationToken);
 
             salesOrderDetailDatastore.SetModel(0, salesOrderdetail);
@@ -46,5 +46,36 @@ namespace Appeon.DataStoreDemo.Services
 
             return salesOrderDetailDatastore.ModifiedCount;
         }
+        
+        public async Task<int> DeleteAsync(
+            SalesOrderDetail salesOrderDetail,
+            CancellationToken cancellationToken = default)
+        {
+            var salesOrderDetailDatastore = new DataStore<SalesOrderDetail>(_context);
+            
+            await salesOrderDetailDatastore.RetrieveByKeyAsync(
+                new object[] { salesOrderDetail.SalesOrderDetailID },
+                cancellationToken);
+                
+            salesOrderDetailDatastore.RemoveAt(0);
+            
+            await _context.BeginTransactionAsync(cancellationToken);
+            
+            var deleteCount = 0;
+            
+            try
+            {
+                deleteCount = await salesOrderDetailDatastore.UpdateAsync(cancellationToken);
+                await _context.CommitAsync(cancellationToken);
+            }
+            catch (Exception)
+            {
+                await _context.RollbackAsync(cancellationToken);
+            }
+            
+            
+            return salesOrderDetailDatastore.ModifiedCount;
+        }
+        
     }
 }

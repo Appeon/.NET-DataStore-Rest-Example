@@ -20,8 +20,8 @@ namespace Appeon.DataStoreDemo.API.Controllers
         {
             _isalesorderdetailservice = isalesorderdetailservice;
         }
-
-        //POST api/SalesOrderDetail
+        
+        //GET api/SalesOrderDetail/{id}
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(SalesOrderDetail), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -57,9 +57,9 @@ namespace Appeon.DataStoreDemo.API.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
-
-        //POST api/SalesOrderDetail
-        [HttpPost]
+        
+        //PUT api/SalesOrderDetail
+        [HttpPut]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<int>> UpdateAsync([FromBody] SalesOrderDetail salesOrderDetail)
@@ -67,7 +67,25 @@ namespace Appeon.DataStoreDemo.API.Controllers
             try
             {
                 var result = await _isalesorderdetailservice.UpdateAsync(salesOrderDetail, default);
-
+                
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+        
+        //DELETE api/SalesOrderDetail/
+        [HttpDelete]
+        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<int>> DeleteAsync([FromBody] SalesOrderDetail salesOrderDetail)
+        {
+            try
+            {
+                var result = await _isalesorderdetailservice.DeleteAsync(salesOrderDetail, default);
+                
                 return Ok(result);
             }
             catch (Exception ex)

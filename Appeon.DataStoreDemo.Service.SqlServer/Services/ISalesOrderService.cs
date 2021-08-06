@@ -10,27 +10,31 @@ namespace Appeon.DataStoreDemo.Services
         Task<IList<SalesOrder>> SearchAsync(
             object[] parameters,
             CancellationToken cancellationToken = default);
-
+            
         Task<SalesOrder> LoadByKeyAsync(
             object[] parameters,
             CancellationToken cancellationToken = default);
-
+            
         Task<Page<SalesOrder>> LoadByPageAsync(
             int pageIndex,
             int pageSize,
             object[] parameters,
             CancellationToken cancellationToken = default);
-
+            
         Task<int> CreateAsync(
             SalesOrder salesOrder,
             CancellationToken cancellationToken = default);
-
+            
         Task<int> UpdateAsync(
             SalesOrder salesOrder,
             CancellationToken cancellationToken = default);
-
+            
         Task<int> DeleteByKeyAsync(
             int salesOrderID,
+            CancellationToken cancellationToken = default);
+            
+        Task<int> DeleteSalesOrdersAsync(
+            List<int> salesOrderIDs,
             CancellationToken cancellationToken = default);
     }
 }

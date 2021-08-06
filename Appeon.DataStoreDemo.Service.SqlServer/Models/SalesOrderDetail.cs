@@ -34,6 +34,9 @@ namespace Appeon.DataStoreDemo.Service.Models
         [DisplayName("Product")]// Manually add
         public int ProductID { get; set; }
 
+        [NotMapped]
+        public string ProductName { get; set; }
+
         [Required]
         [DisplayName("Special Offer ID")]// Manually add
         public int SpecialOfferID { get; set; }

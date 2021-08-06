@@ -1,0 +1,9 @@
+D:\work\Vico\Angular\From Francisco\AngularDemo V5\AngularDemo\DemoAPI\Appeon.DataStoreDemo.Service.SqlServer\bin\Debug\netstandard2.1\Appeon.DataStoreDemo.Service.SqlServer.deps.json
+D:\work\Vico\Angular\From Francisco\AngularDemo V5\AngularDemo\DemoAPI\Appeon.DataStoreDemo.Service.SqlServer\bin\Debug\netstandard2.1\Appeon.DataStoreDemo.Service.SqlServer.dll
+D:\work\Vico\Angular\From Francisco\AngularDemo V5\AngularDemo\DemoAPI\Appeon.DataStoreDemo.Service.SqlServer\bin\Debug\netstandard2.1\Appeon.DataStoreDemo.Service.SqlServer.pdb
+D:\work\Vico\Angular\From Francisco\AngularDemo V5\AngularDemo\DemoAPI\Appeon.DataStoreDemo.Service.SqlServer\obj\Debug\netstandard2.1\Appeon.DataStoreDemo.Service.SqlServer.csprojAssemblyReference.cache
+D:\work\Vico\Angular\From Francisco\AngularDemo V5\AngularDemo\DemoAPI\Appeon.DataStoreDemo.Service.SqlServer\obj\Debug\netstandard2.1\Appeon.DataStoreDemo.Service.SqlServer.AssemblyInfoInputs.cache
+D:\work\Vico\Angular\From Francisco\AngularDemo V5\AngularDemo\DemoAPI\Appeon.DataStoreDemo.Service.SqlServer\obj\Debug\netstandard2.1\Appeon.DataStoreDemo.Service.SqlServer.AssemblyInfo.cs
+D:\work\Vico\Angular\From Francisco\AngularDemo V5\AngularDemo\DemoAPI\Appeon.DataStoreDemo.Service.SqlServer\obj\Debug\netstandard2.1\Appeon.DataStoreDemo.Service.SqlServer.csproj.CoreCompileInputs.cache
+D:\work\Vico\Angular\From Francisco\AngularDemo V5\AngularDemo\DemoAPI\Appeon.DataStoreDemo.Service.SqlServer\obj\Debug\netstandard2.1\Appeon.DataStoreDemo.Service.SqlServer.dll
+D:\work\Vico\Angular\From Francisco\AngularDemo V5\AngularDemo\DemoAPI\Appeon.DataStoreDemo.Service.SqlServer\obj\Debug\netstandard2.1\Appeon.DataStoreDemo.Service.SqlServer.pdb

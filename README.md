@@ -1,6 +1,6 @@
 ﻿# .NET DataStore - ASP.NET Core web API Example
 
-This ASP.NET Core project makes use of the web API, and references to a Class Library project, to perform CRUD operations and transaction management with DataStore from [DWNet.Data](https://www.nuget.org/packages/DWNet.Data/). 
+This ASP.NET Core project makes use of the web API, and reference to a Class Library project, to perform CRUD operations and transaction management with DataStore from [DWNet.Data](https://www.nuget.org/packages/DWNet.Data/). 
 
 ##### Sample Project Structure
 
