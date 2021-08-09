@@ -10,7 +10,7 @@ The project is structured as follows.
 
 ```
 |—— Appeon.DataStoreDemo.API			Project implemented with Web API
-	|—— Controllers						Includes the Controllers
+    |—— Controllers						Includes the Controllers
 |-- Appeon.DataStoreDemo.Service.SqlServer Project implemented with DataStore
     |-- Datacontext         			Includes the class that manages database connection to SQL 
     |-- Models							Includes the model classes
