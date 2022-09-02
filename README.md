@@ -4,7 +4,7 @@ This ASP.NET Core project makes use of the web API, and reference to a Class Lib
 
 ##### Sample Project Structure
 
-The project contains an ASP.Net Core Web Application project. it is implemented using [Web API](https://docs.microsoft.com/aspnet/core/web-api/?view=aspnetcore-3.1). 
+The project contains an ASP.Net Core Web Application project. it is implemented using [Web API](https://docs.microsoft.com/aspnet/core/web-api/?view=aspnetcore-6.0). 
 
 The project is structured as follows.
 
@@ -20,7 +20,7 @@ The project is structured as follows.
 
 1. Download the project and save it to your local directory. 
 
-2. Open the *DataStore-Example.sln* solution in Visual Studio 2019 or another C# development IDE.
+2. Open the *DataStore-Example.sln* solution in Visual Studio 2022 or another C# development IDE.
 
 3. Download the SQL Server database backup file from [.NET-Project-Example-Database](https://github.com/Appeon/.NET-Project-Example-Database), and restore the database using the downloaded database backup file.
 
@@ -28,7 +28,7 @@ The project is structured as follows.
 
    ```json
    //Keep the database connection name as the default “AdventureWorks2012” or change it to a name you prefer to use, and change the Data Source, User ID, Password and Initial Catalog according to the actual settings
-   "ConnectionStrings": { "AdventureWorks2012": "Data Source=127.0.0.1; Initial Catalog=AdventureWorks2012; Integrated Security=False; User ID=sa; Password=123456; Pooling=True; Min Pool Size=0; Max Pool Size=100; ApplicationIntent=ReadWrite" } 
+   "ConnectionStrings": { "AdventureWorks2012": "Data Source=127.0.0.1; Initial Catalog=AdventureWorks2012; Integrated Security=False; User ID=sa; Password=123456; Pooling=True; Min Pool Size=0; Max Pool Size=100; ApplicationIntent=ReadWrite;Trust Server Certificate=True" } 
    ```
 
 5. In the ConfigureServices method of *Startup.cs*, go to the following line, and make sure the ConnectionString name is the same as the database connection name specified in step #4.
